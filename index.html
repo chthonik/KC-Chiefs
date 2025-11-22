@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags provide information about the webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kansas City Chiefs - Player Statistics</title>
+
+    <!-- CSS styles control how the page looks -->
+    <style>
+        /* Reset default browser spacing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the entire page body */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #E31837 0%, #FFB81C 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Main container for content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #E31837;
+        }
+
+        h1 {
+            color: #E31837;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #FFB81C;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* Grid layout for player cards */
+        .players-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        /* Individual player card styling */
+        .player-card {
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            border: 2px solid #E31837;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect - card lifts up when mouse is over it */
+        .player-card:hover {
+            transform: translateY(-30px);
+            box-shadow: 0 8px 20px rgba(227, 24, 55, 0.3);
+        }
+
+        .player-name {
+            color: #2618e3;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .player-position {
+            color: #FFB81C;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .player-number {
+            background-color: #E31837;
+            color: white;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* Statistics list styling */
+        .stats {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .stats li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .stats li:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .stat-value {
+            color: #E31837;
+            font-weight: bold;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #E31837;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main container holds all content -->
+    <div class="container">
+        <!-- Header section -->
+        <header>
+            <h1>🏈 Kansas City Chiefs</h>
+                <p class="subtitle">2025 Season Player Statistics</p>
+        </header>
+
+        <!-- Grid of player cards -->
+        <div class="players-grid">
+
+            <!-- Player Card 1: Patrick Mahomes -->
+            <div class="player-card">
+                <div class="player-number">#15</div>
+                <div class="player-name">Patrick Mahomes</div>
+                <div class="player-position">Quarterback(QB)</div>
+                <ul class="stats">
+                    <li>
+                        <span class="stat-label">Passing Yards:</span>
+                        <span class="stat-value">3,928</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Touchdowns:</span>
+                        <span class="stat-value">27</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Completion %:</span>
+                        <span class="stat-value">67.2%</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">QB Rating:</span>
+                        <span class="stat-value">95.8</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Player Card 2: Travis Kelce -->
+            <div class="player-card">
+                <div class="player-number">#87</div>
+                <div class="player-name">Travis Kelce</div>
+                <div class="player-position">Tight End(TE)</div>
+                <ul class="stats">
+                    <li>
+                        <span class="stat-label">Receptions:</span>
+                        <span class="stat-value">93</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Receiving Yards:</span>
+                        <span class="stat-value">984</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Touchdowns:</span>
+                        <span class="stat-value">5</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Avg per Catch:</span>
+                        <span class="stat-value">10.6</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Player Card 3: Isiah Pacheco -->
+            <div class="player-card">
+                <div class="player-number">#10</div>
+                <div class="player-name">Isiah Pacheco</div>
+                <div class="player-position">Running Back(RB)</div>
+                <ul class="stats">
+                    <li>
+                        <span class="stat-label">Rushing Yards:</span>
+                        <span class="stat-value">935</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Touchdowns:</span>
+                        <span class="stat-value">7</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Yards per Carry:</span>
+                        <span class="stat-value">4.8</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Longest Run:</span>
+                        <span class="stat-value">52</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Player Card 4: Chris Jones -->
+            <div class="player-card">
+                <div class="player-number">#95</div>
+                <div class="player-name">Chris Jones</div>
+                <div class="player-position">Defensive Tackle(DT)</div>
+                <ul class="stats">
+                    <li>
+                        <span class="stat-label">Tackles:</span>
+                        <span class="stat-value">58</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Sacks:</span>
+                        <span class="stat-value">10.5</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">QB Hits:</span>
+                        <span class="stat-value">21</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Tackles for Loss:</span>
+                        <span class="stat-value">15</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Player Card 5: Rashee Rice -->
+            <div class="player-card">
+                <div class="player-number">#4</div>
+                <div class="player-name">Rashee Rice</div>
+                <div class="player-position">Wide Receiver(WR)</div>
+                <ul class="stats">
+                    <li>
+                        <span class="stat-label">Receptions:</span>
+                        <span class="stat-value">79</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Receiving Yards:</span>
+                        <span class="stat-value">938</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Touchdowns:</span>
+                        <span class="stat-value">7</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Avg per Catch:</span>
+                        <span class="stat-value">11.9</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Player Card 6: L'Jarius Sneed -->
+            <div class="player-card">
+                <div class="player-number">#38</div>
+                <div class="player-name">L'Jarius Sneed</div>
+                <div class="player-position">Cornerback(CB)</div>
+                <ul class="stats">
+                    <li>
+                        <span class="stat-label">Tackles:</span>
+                        <span class="stat-value">78</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Interceptions:</span>
+                        <span class="stat-value">2</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Pass Deflections:</span>
+                        <span class="stat-value">14</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Sacks:</span>
+                        <span class="stat-value">1</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <p>⚡ Go Chiefs! ⚡</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Created with HTML & CSS</p>
+        </footer>
+    </div>
+</body>
+
+</html>
